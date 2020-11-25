@@ -9,27 +9,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zane Nasrallah</title>
     <link rel="stylesheet" href="styles.css">
-    <script type="text/javascript" src="scripts.js"></script>
 </head>
 <body>
-    
-    <div id="particles-js"></div>
-    <!-- Heading Page Section -->
+    <!-- Hero page -->
     <section id="heading">
         <div class="heading container">
-            <div> 
-                <ul id="scene" data-friction-x="0.03" data-friction-y="0.05">
-                    <li class="layer" id="specks" data-depth="0.1"></li>
-                    <li class="layer" id="layer-1" data-depth="0.15"> <div class="img" id="img-1"></div></li>
-                    <li class="layer" id="layer-2" data-depth="0.25"> <div class="img" id="img-2"></div> </li>
-                    <li class="layer" id="layer-3" data-depth="0.45"><div class="img" id="img-3"></div></li>
-                </ul> 
-                <h1>hello, <span></span></h1>
-                <h1>I'm Zane <span></span></h1>
-                <a href="#" type="button" class="cta">See more</a>
-            </div>
+                <!-- Animated Name -->
+                <div class="name">  
+                    <h1>Hello, <span></span></h1>
+                    <h1>I'm Zane <span></span></h1>
+                </div>
+                <!-- ParticlesJS stars -->
+                <div class="stars">
+                    <div id="particles-js"></div>
+                    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+                    <script src="scripts.js"></script>
+                </div>
+                <!-- Navigation Bar -->
+                <div class="et-hero-tabs-container">
+                    <a class="et-hero-tab" href="#about">About</a>
+                    <a class="et-hero-tab" href="#tab-skills">Skills</a>
+                    <a class="et-hero-tab" href="#tab-projects">Projects</a>
+                    <a class="et-hero-tab" href="#tab-other">Other</a>
+                    <span class="et-hero-tab-slider"></span>
+                  </div>
         </div>
     </section>
-    <!-- About Section -->
+    <!-- About Page -->
+    <section class="et-slide" id="about">
+        <h1>About</h1>
+        <h3>something about me</h3>
+    </section>
+    <!-- Skills Page -->
+    <section class="et-slide" id="tab-skills">
+        <h1>Skills</h1>
+        <h3>something about my skills</h3>
+    </section>
+    <!-- Projects Page -->
+    <section class="et-slide" id="tab-projects">
+        <h1>Projects</h1>
+        <h3>something about my projects</h3>
+    </section>
+    <!-- Other Page -->
+    <section class="et-slide" id="tab-other">
+        <h1>Other</h1>
+        <h3>something about other</h3>
+    </section>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+<script  src="navbar.js"></script>
 </body>
 </html>

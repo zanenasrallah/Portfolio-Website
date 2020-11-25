@@ -1,49 +1,110 @@
-//SLIDER
-var speed = 400;
-
-$(document).ready(function(){
-  var imgCount = $('.img').length
-  $("#slider").on("change", function() {
-    for (var i = 1; i <= imgCount; i++) {
-      speed = 201 - this.value;
-      $('#range').text(`1000px / ${speed/10}s`)
-      speed = speed * (i / 1.25)
-      $('#img-' + i).css({
-        'animation-duration': speed + 's',
-        'animation-name': 'float'
-      });
+particlesJS("particles-js", {
+  "particles": {
+    "number": {
+      "value": 355,
+      "density": {
+        "enable": true,
+        "value_area": 789.1476416322727
+      }
+    },
+    "color": {
+      "value": "#ffffff"
+    },
+    "shape": {
+      "type": "circle",
+      "stroke": {
+        "width": 0,
+        "color": "#000000"
+      },
+      "polygon": {
+        "nb_sides": 5
+      },
+      "image": {
+        "src": "img/github.svg",
+        "width": 100,
+        "height": 100
+      }
+    },
+    "opacity": {
+      "value": 0.48927153781200905,
+      "random": false,
+      "anim": {
+        "enable": true,
+        "speed": 0.2,
+        "opacity_min": 0,
+        "sync": false
+      }
+    },
+    "size": {
+      "value": 2,
+      "random": true,
+      "anim": {
+        "enable": true,
+        "speed": 2,
+        "size_min": 0,
+        "sync": false
+      }
+    },
+    "line_linked": {
+      "enable": false,
+      "distance": 150,
+      "color": "#ffffff",
+      "opacity": 0.4,
+      "width": 1
+    },
+    "move": {
+      "enable": true,
+      "speed": 0.2,
+      "direction": "none",
+      "random": true,
+      "straight": false,
+      "out_mode": "out",
+      "bounce": false,
+      "attract": {
+        "enable": false,
+        "rotateX": 600,
+        "rotateY": 1200
+      }
     }
-  });
+  },
+  "interactivity": {
+    "detect_on": "canvas",
+    "events": {
+      "onhover": {
+        "enable": true,
+        "mode": "bubble"
+      },
+      "onclick": {
+        "enable": true,
+        "mode": "push"
+      },
+      "resize": true
+    },
+    "modes": {
+      "grab": {
+        "distance": 400,
+        "line_linked": {
+          "opacity": 1
+        }
+      },
+      "bubble": {
+        "distance": 83.91608391608392,
+        "size": 1,
+        "duration": 3,
+        "opacity": 1,
+        "speed": 3
+      },
+      "repulse": {
+        "distance": 200,
+        "duration": 0.4
+      },
+      "push": {
+        "particles_nb": 4
+      },
+      "remove": {
+        "particles_nb": 2
+      }
+    }
+  },
+  "retina_detect": true
 });
-                  
-var parallax = $('#scene').parallax();
-
-for (var i = 1; i < 6; i++) {
-  twinkleLoop(i);
-};
-
-function twinkleLoop(i) {
-  var duration = ((Math.random() * 5) + 3)
-
-  duration = duration - ((495 - speed)/100)
-  twinkle(i, duration)
-
-  setTimeout(function() {
-    twinkleLoop(i)
-  }, duration * 1000);
-}
-
-function twinkle(id, duration) {
-  var top = (Math.floor(Math.random() * 85) + 0) + '%';
-  var left = (Math.floor(Math.random() * 85) + 0) + '%';
-
-  $('#speck' + id).remove();
-  $('#specks').append("<div class='speck' id='speck" + id + "'></div>")
-  $('#speck' + id).css({
-    'top': top,
-    'left': left,
-    'animation-duration': duration + 's',
-    'animation-timing-function': 'cubic-bezier(0.250, 0.250, 0.750, 0.750)',
-    'animation-name': 'twinkle',
-  })
-}
