@@ -11,26 +11,23 @@ class StickyNavigation {
 		$(window).scroll(() => { this.onScroll(); });
 		$(window).resize(() => { this.onResize(); });
 	}
-	
 	onTabClick(event, element) {
 		event.preventDefault();
 		let scrollTop = $(element.attr('href')).offset().top - this.tabContainerHeight + 1;
 		$('html, body').animate({ scrollTop: scrollTop }, 600);
 	}
-	
 	onScroll() {
 		this.checkTabContainerPosition();
     this.findCurrentTabSelector();
 	}
-	
 	onResize() {
 		if(this.currentId) {
 			this.setSliderCss();
 		}
 	}
-	
 	checkTabContainerPosition() {
 		let offset = $('.heading').offset().top + $('.heading').height() - this.tabContainerHeight;
+		console.log($(window).scrollTop() > offset);
 		if($(window).scrollTop() > offset) {
 			$('.et-hero-tabs-container').addClass('et-hero-tabs-container--top');
 		} 
@@ -38,7 +35,6 @@ class StickyNavigation {
 			$('.et-hero-tabs-container').removeClass('et-hero-tabs-container--top');
 		}
 	}
-	
 	findCurrentTabSelector(element) {
 		let newCurrentId;
 		let newCurrentTab;
@@ -69,7 +65,5 @@ class StickyNavigation {
 		$('.et-hero-tab-slider').css('width', width);
 		$('.et-hero-tab-slider').css('left', left);
 	}
-	
 }
-
 new StickyNavigation();
