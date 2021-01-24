@@ -148,7 +148,7 @@ a{
           align-items: center;
   height: 100vh;
   position: relative;
-  background: #052243;
+  background: #868686;
   text-align: center;
   padding: 0 2em;
 }
@@ -179,7 +179,7 @@ a{
   width: 100%;
   height: 70px;
   /* Im not sure if I want the below code to be there lol */
-  text-shadow: 2px 2px 16px black;
+  text-shadow: 2px 2px 32px black;
   /* box-shadow: 0 0 20px rgba(255, 255, 255, 0.1); */
   /* background: rgba(98, 36, 53, 0.0);
   background: rgba(84,35,46, 1); */
@@ -189,6 +189,8 @@ a{
 }
 .et-hero-tabs-container--top {
   background: rgba(13,19,34, 1);
+  /* box-shadow: 5px 10px; */
+
   /* background: black; */
   position: fixed;
   top: 0;
