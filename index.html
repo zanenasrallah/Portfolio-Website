@@ -6,7 +6,14 @@
     <title>Zane Nasrallah</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" type="image/png"  href="images/favicon-v2(blur).png">
+    <!-- Icons -->
     <script src="https://kit.fontawesome.com/04d2bb3413.js" crossorigin="anonymous"></script>
+    <!--Jquery-->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <!-- Lightslider -->
+    <link rel="stylesheet" href="lightslider/lightslider.css"/>
+    <script src="lightslider/lightslider.js"></script>
+
 </head>
 <body>
     <!-- Hero page -->
@@ -45,32 +52,108 @@
     </section>
     <!-- Projects Page -->
     <section class="page-section" id="tab-projects">
-        <h1>Projects</h1>
-        <!-- <h3>something about my projects</h3> -->
-        <div class="card">
-          <div class="card-image">
-
-          </div>
-          <div class="card-text">
-            <span class="date">4 days ago</span>
-            <h2>Post One</h2>
-            <p>Lorem ipsum dolor sit amet consectetur, Ducimus, repudiandae temporibus omnis illum maxime quod deserunt eligendi dolor</p>
-          </div>
-          <div class="card-stats">
-            <div class="stat">
-              <div class="value">4<sup>m</sup></div>
-              <div class="type">read</div>
+      <h1>Projects</h1>
+      <h3>Here are some of my projects:</h3>
+      <!--  -->
+      <!--  -->
+      <div class="slideControls">
+        <a class="slidePrev">
+          <i class="fa fa-angle-left"></i>
+         </a>
+        <a class="slideNext">
+          <i class="fa fa-angle-right"></i>
+        </a>
+  </div> 
+      <ul id="autoWidth" class="cs-hidden">
+        <!-- Postmint -->
+        <li class="PostMint">
+          <div class="card">
+            <div class="postmint-image"></div>
+            <div class="card-text">
+              <h2>PostMint</h2>
+              <p>Web app that uses machine learning and trend normalization to automatically generate posts for small business's Instagram pages from uploaded images</p>
             </div>
-            <div class="stat border">
-              <div class="value">5123</div>
-              <div class="type">views</div>
-            </div>
-            <div class="stat">
-              <div class="value">32</div>
-              <div class="type">comments</div>
+            <div class="card-stats">
+              <div class="stat">
+                <div class="value">Java</div>
+              </div>
+              <div class="stat border">
+                <div class="value">Java</div>
+              </div>
+              <div class="stat">
+                <div class="value">Java</div>
+              </div>
             </div>
           </div>
-        </div>
+        </li>
+        <!-- Grassroots -->
+        <li class="Grassroots">
+          <div class="card">
+            <div class="grassroots-image"></div>
+            <div class="card-text">
+              <h2>Grassroots</h2>
+              <p>Informational website bringing awareness to racial and economic housing segregation in Austin. Uses scrubbed data to make various interactive and informational maps</p>
+            </div>
+            <div class="card-stats" id="grassroots-stats">
+              <div class="stat">
+                <div class="value">Python</div>
+              </div>
+              <div class="stat border">
+                <div class="value">Python</div>
+              </div>
+              <div class="stat">
+                <div class="value">Python</div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <!-- Safeguard Seattle -->
+        <li class="Safeguard-Seattle">
+          <div class="card">
+            <div class="safeguard-image"></div>
+            <div class="card-text">
+              <h2>Safeguard Seattle</h2>
+              <p>Interactive heat map to protect marginalized communites from hate crimes in Seattle. Displas relevant news articles and allows users to filter crimes by various categories</p>
+            </div>
+            <div class="card-stats" id="safeguard-stats">
+              <div class="stat">
+                <div class="value">Python</div>
+              </div>
+              <div class="stat border">
+                <div class="value">Python</div>
+              </div>
+              <div class="stat">
+                <div class="value">Python</div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <!-- Contextr -->
+        <li class="5">
+          <div class="card">
+            <!-- <div class="grassroots-image"></div> -->
+            <div class="card-text">
+              <span class="date">4 days ago</span>
+              <h2>Contextr.io</h2>
+              <p>Full social media platform for sharing your friends' quotes out of context</p>
+            </div>
+            <div class="card-stats">
+              <div class="stat">
+                <div class="value">Python</div>
+              </div>
+              <div class="stat border">
+                <div class="value">Python</div>
+              </div>
+              <div class="stat">
+                <div class="value">Python</div>
+              </div>
+            </div>
+          </div>
+        </li> 
+         
+      </ul>
+        
+        
     </section>
     <!-- Other Page -->
     <section class="page-section" id="tab-other">
@@ -98,7 +181,6 @@
     <footer class="foot">
       <p>©2021 Zane Nasrallah</p>
     </footer>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
-<script  src="navbar.js"></script>
+    <script  src="navbar.js"></script>
 </body>
 </html>
