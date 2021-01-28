@@ -23,6 +23,7 @@ a{
     align-items: center;
     justify-content: center;
 }
+
 /* Heading Section */
 #heading{
     background-color:#003366;
@@ -130,10 +131,12 @@ a{
     height: 60%;
     z-index: 2;
   }
+
 /* Scrollbar! */
 ::-webkit-scrollbar {
     display:none;
 }
+
 /* Navigation Bars */
 .et-hero-tabs,
 .page-section {
@@ -148,22 +151,23 @@ a{
           align-items: center;
   height: 100vh;
   position: relative;
-  /* background: #868686; */
-  /* background: #d8d7d7; */
   background: white;
   text-align: center;
   padding: 0 2em;
 }
+#tab-skills, #tab-other{
+  background: rgb(233,238,238);
+}
 .heading h1,
 .page-section h1 {
-  font-size: 2rem;
+  font-size: 3rem;
   margin: 0;
   letter-spacing: 1rem;
-  color: blackss;
+  color: rgba(13,19,34, 0.95);
 }
 .heading h3,
 .page-section h3 {
-  font-size: 1.3rem;
+  font-size: 1.8rem;
   /* letter-spacing: 0.3rem; */
   opacity: 0.6;
   color: black;
@@ -182,25 +186,14 @@ a{
   height: 70px;
   /* Im not sure if I want the below code to be there lol */
   text-shadow: 2px 2px 32px black;
-  /* box-shadow: 0 0 20px rgba(255, 255, 255, 0.1); */
-  /* background: rgba(98, 36, 53, 0.0);
-  background: rgba(84,35,46, 1); */
+  
   background: rgba(13,19,34, 0);
   z-index: 10;
-  /* 990000 */
 }
 .et-hero-tabs-container--top {
   background: rgba(13,19,34, 0.95);
-  /* background: rgb(124, 38, 38); */
-  /* background: white; */
-  /* color: black; */
-
-
-  /* box-shadow: 0 2px 2px -2px rgba(0,0,0,.2); */
   -webkit-box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
   box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
-
-  /* background: black; */
   position: fixed;
   top: 0;
 }
@@ -234,7 +227,7 @@ a{
   -webkit-transition: left 0.2s ease;
   transition: left 0.2s ease;
 }
-@media (min-width: 800px) {
+/* @media (min-width: 800px) {
   .heading h1,
   .page-section h1 {
     font-size: 3rem;
@@ -247,125 +240,95 @@ a{
   .et-hero-tab {
     font-size: 1.5rem;
   }
+} */
+
+
+/* Contact Page */
+*:focus, *:active {
+  outline: none !important;
+  -webkit-tap-highlight-color: transparent;
 }
 
-
-/* Color Variables */
-/* Social Icon Mixin */
-/* Social Icons */
-.social-icons {
-  display: flex;
+.wrapper {
+  display: inline-flex;
 }
-
-.social-icon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  width: 80px;
-  height: 80px;
-  margin: 0 0.5rem;
-  border-radius: 50%;
-  cursor: pointer;
-  font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
-  font-size: 2.5rem;
+a{
   text-decoration: none;
-  transition: all 0.15s ease;
+  color: black;
 }
-.social-icon:hover {
-  color: #fff;
-}
-.social-icon:hover .tooltip {
-  visibility: visible;
-  opacity: 1;
-  transform: translate(-50%, -150%);
-}
-.social-icon:active {
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5) inset;
-}
-.social-icon--linkedin {
-  background: #006599;
-  color: #fff;
-}
-.social-icon--linkedin .tooltip {
-  background: #006599;
-  color: currentColor;
-}
-.social-icon--linkedin .tooltip:after {
-  border-top-color: #006599;
-}
-.social-icon--email {
-  background: #000;
-  color: #fff;
-}
-.social-icon--email .tooltip {
-  background: #000;
-  color: currentColor;
-}
-.social-icon--email .tooltip:after {
-  border-top-color: #000;
-}
-.social-icon--facebook .tooltip {
-  background: #3b5a9b;
-  color: currentColor;
-}
-.social-icon--facebook .tooltip:after {
-  border-top-color: #3b5a9b;
-}
-.social-icon--instagram {
-  background: #527fa6;
-  color: #fff;
-}
-.social-icon--instagram .tooltip {
-  background: #527fa6;
-  color: currentColor;
-}
-.social-icon--instagram .tooltip:after {
-  border-top-color: #527fa6;
-}
-.social-icon--github {
-  background: #4284c0;
-  color: #fff;
-}
-.social-icon--github .tooltip {
-  background: #4284c0;
-  color: currentColor;
-}
-.social-icon--github .tooltip:after {
-  border-top-color: #4284c0;
-}
-.social-icon i {
+.wrapper .icon {
   position: relative;
-  top: 1px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  padding: 35px;
+  margin: 50px;
+  width: 100px;
+  height: 100px;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
-/* Tooltips */
-.tooltip {
-  display: block;
+.wrapper .tooltip {
   position: absolute;
   top: 0;
-  left: 50%;
-  padding: 0.8rem 1rem;
-  border-radius: 40px;
-  font-size: 0.8rem;
-  font-weight: bold;
+  font-size: 14px;
+  background-color: #ffffff;
+  color: #ffffff;
+  padding: 5px 8px;
+  border-radius: 5px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
   opacity: 0;
   pointer-events: none;
-  text-transform: uppercase;
-  transform: translate(-50%, -100%);
-  transition: all 0.3s ease;
-  z-index: 1;
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
-.tooltip:after {
-  display: block;
+.wrapper .tooltip::before {
   position: absolute;
-  bottom: 1px;
-  left: 50%;
-  width: 0;
-  height: 0;
   content: "";
-  border: solid;
-  border-width: 10px 10px 0 10px;
-  border-color: transparent;
-  transform: translate(-50%, 100%);
+  height: 8px;
+  width: 8px;
+  background-color: #ffffff;
+  bottom: -3px;
+  left: 50%;
+  transform: translate(-50%) rotate(45deg);
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.wrapper .icon:hover .tooltip {
+  top: -45px;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+.wrapper .icon:hover span,
+.wrapper .icon:hover .tooltip {
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+}
+.wrapper .facebook:hover,
+.wrapper .facebook:hover .tooltip,
+.wrapper .facebook:hover .tooltip::before {
+  background-color: #3b5999;
+  color: #ffffff;
+}
+.wrapper .instagram:hover,
+.wrapper .instagram:hover .tooltip,
+.wrapper .instagram:hover .tooltip::before {
+  background-color: #e1306c;
+  color: #ffffff;
+}
+.wrapper .github:hover,
+.wrapper .github:hover .tooltip,
+.wrapper .github:hover .tooltip::before {
+  background-color: #333333;
+  color: #ffffff;
+}
+.wrapper .youtube:hover,
+.wrapper .youtube:hover .tooltip,
+.wrapper .youtube:hover .tooltip::before {
+  background-color: #de463b;
+  color: #ffffff;
 }
