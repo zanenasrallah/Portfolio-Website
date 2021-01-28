@@ -148,7 +148,9 @@ a{
           align-items: center;
   height: 100vh;
   position: relative;
-  background: #868686;
+  /* background: #868686; */
+  /* background: #d8d7d7; */
+  background: white;
   text-align: center;
   padding: 0 2em;
 }
@@ -157,14 +159,14 @@ a{
   font-size: 2rem;
   margin: 0;
   letter-spacing: 1rem;
-  color: white;
+  color: blackss;
 }
 .heading h3,
 .page-section h3 {
-  font-size: 1rem;
-  letter-spacing: 0.3rem;
+  font-size: 1.3rem;
+  /* letter-spacing: 0.3rem; */
   opacity: 0.6;
-  color: white;
+  color: black;
 }
 
 .et-hero-tabs-container {
@@ -188,8 +190,15 @@ a{
   /* 990000 */
 }
 .et-hero-tabs-container--top {
-  background: rgba(13,19,34, 1);
-  /* box-shadow: 5px 10px; */
+  background: rgba(13,19,34, 0.95);
+  /* background: rgb(124, 38, 38); */
+  /* background: white; */
+  /* color: black; */
+
+
+  /* box-shadow: 0 2px 2px -2px rgba(0,0,0,.2); */
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
 
   /* background: black; */
   position: fixed;
