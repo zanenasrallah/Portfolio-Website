@@ -1,30 +1,3 @@
-// // JavaScript Document
-// $(document).ready(function() {
-//   $('#autoWidth').lightSlider({
-//       autoWidth:true,
-//       loop:true,
-//       onSliderLoad: function() {
-//           $('#autoWidth').removeClass('cs-hidden');
-//       } 
-//   });  
-// });
-$(document).ready(function() {
-  var slider = $("#autoWidth").lightSlider({
-    controls: false,
-    //  auto: true,
-     loop: true,
-     autoWidth: true
-  });
-  $('.slideControls .slidePrev').click(function() {
-      slider.goToPrevSlide();
-  });
-
-  $('.slideControls .slideNext').click(function() {
-      slider.goToNextSlide();
-  });
-});
-
-
 particlesJS("particles-js", {
   "particles": {
     "number": {

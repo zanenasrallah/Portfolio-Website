@@ -370,6 +370,17 @@ ul{
   position: absolute;
   cursor: pointer;
 }
+.glider-contain{
+  width: 85% !important;
+}
+.glider-next{
+  right: -50px;
+  top:50%
+}
+glider-prev{
+  left: -40px;
+  top:50%;
+}
 
 
 
