@@ -376,7 +376,7 @@ ul{
 }
 
 .wrapper {
-  display: inline-flex;
+  display: flex;
 }
 a{
   text-decoration: none;
@@ -456,6 +456,28 @@ a{
 .wrapper .youtube:hover .tooltip::before {
   background-color: #de463b;
   color: #ffffff;
+}
+@media (max-width: 800px){
+  .wrapper{
+    flex-direction: column;
+    
+  }
+  .wrapper .icon{
+    margin: 9px;
+  }
+  .card {
+    display: grid;
+    grid-template-columns: 300px;
+    grid-template-rows: 210px 210px 60px;
+    grid-template-areas: "image" "text" "stats";
+    border-radius: 18px;
+    background: white;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.3);
+    /* font-family: roboto; */
+    text-align: center;
+    min-width: 300px;
+    max-width: 300px;
+  }
 }
 
 /* Footer */
