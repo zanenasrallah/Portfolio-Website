@@ -291,6 +291,17 @@ ul{
   border-top-right-radius: 15px;
   background-size: cover;
 }
+/* Contextr */
+.contextr-image{
+  grid-area: image;
+  background: url("./images/contextr3.png");
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  background-size: cover;
+}
+#contextr-stats{
+  background: linear-gradient(315deg, rgba(201,156,156,1) 0%, rgba(135,122,176,1) 85%);
+}
 /* Grassroots */
 .grassroots-image{
   grid-area: image;
@@ -312,6 +323,50 @@ ul{
 }
 #safeguard-stats{
   background: rgb(16,16,16);
+}
+/* Educe */
+.educe-image{
+  grid-area: image;
+  background: url("./images/educe.png");
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  background-size: cover;
+}
+#educe-stats{
+  background: rgb(255,189,88);
+}
+/* Wildfirewatch */
+.fire-image{
+  grid-area: image;
+  background: url("./images/wildfire.png");
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  background-size: cover;
+}
+#fire-stats{
+  background: #FF5757;
+}
+/* Mindfull */
+.mindfull-image{
+  grid-area: image;
+  background: url("./images/mindfull.png");
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  background-size: cover;
+}
+#mindfull-stats{
+  background: rgb(0,74,173);
+}
+/* Novus */
+.novus-image{
+  grid-area: image;
+  background: url("./images/novusintium.png");
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  background-size: cover;
+}
+#novus-stats{
+ background: #5271FF;
 }
 .card-text {
   grid-area: text;
@@ -336,6 +391,7 @@ ul{
   background:rgb(84,84,84);
 }
 .card-stats .stat {
+  font-size: 3rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -359,11 +415,11 @@ ul{
   bottom: 0;
 }
 .glider-next{
-  right: -50px;
+  right: -20px;
   top:50%
 }
 .glider-prev{
-  left: -40px;
+  left: -20px;
   top:50%;
 }
 
