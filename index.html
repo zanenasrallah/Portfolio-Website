@@ -52,10 +52,10 @@
     <!-- Projects Page -->
     <section class="page-section" id="tab-projects">
       <h1>Projects</h1>
-      <h3>Here are some of my projects:</h3>
+      <!-- <h3>Here are some of my projects:</h3> -->
 
       <div class="glider-contain multiple">
-        <button class="glider-prev">
+        <button class="glider-prev" id="previous">
           <i class="fa fa-chevron-left"></i>
         </button>
         <div class="glider">
@@ -138,23 +138,7 @@
         <button class="glider-next">
           <i class="fa fa-chevron-right"></i>
         </button>
-  
         <div id="dots" class="glider-dots"></div>
-       
-        <script>
-          new Glider(document.querySelector('.glider'), {
-              //To make responsive, check the documentation for break points
-            slidesToShow: 2,
-            // slidesToScroll: 5,
-            draggable: true,
-            scrollLock: true,
-            dots: '#dots',
-            arrows: {
-              prev: 'glider-prev',
-              next: 'glider-next'
-            } 
-          });
-        </script>
       </div>
       
         
