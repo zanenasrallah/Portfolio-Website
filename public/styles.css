@@ -157,8 +157,6 @@ ul{
   background: white;
   text-align: center;
   padding: 0 2em;
-  /* padding: 50px; */
-  /* box-shadow: 5px 5px -14px 0px #000000; */
 }
 #tab-other{
   background: rgb(233,238,238);
@@ -182,7 +180,7 @@ ul{
 }
 .heading h1,
 .page-section h1 {
-  font-size: 3rem;
+  font-size: 5rem;
   margin: 0;
   letter-spacing: 1rem;
   color: rgba(13,19,34, 0.95);
@@ -194,23 +192,81 @@ ul{
   opacity: 0.6;
   color: black;
 }
+
+/* About Cards */
+.about-container{
+  width:80%;
+	height:330px;
+  border-radius: 18px;
+	box-shadow:2px 2px 12px rgba(0,0,0,0.2);
+	display: flex;
+	margin: -7%  auto 20px auto;
+	position: relative;
+	justify-content:space-evenly;
+	align-items: center;
+  box-shadow: 5px 5px 15px rgba(0,0,0,0.3);
+  z-index: -1;
+}
+.about-container img{
+  min-width: 250px;
+  width: 50%;
+  flex: 0.45;
+  margin: 5rem;
+  height:250px;
+}
+
+.about-head{
+  text-align: center;
+  margin-bottom: 10rem;
+  padding: 10rem;
+}
+
+/* Skills Cards */
 .skill-container{
+  width: 90%;
+  margin: 50px auto;
+}
+.skill-row{
   display: flex;
   flex-direction: row;
-  padding: 5px;
+  justify-content: space-around;
+  flex-flow: wrap;
 }
 .skill-card{
   display: grid;
-  grid-template-columns: 400px;
-  grid-template-rows: 100px 300px;
+  overflow:hidden;
+  justify-content: space-around;
+
+  padding: 50px;
+  font-size: 30px;
+  width: 25%;
   grid-template-areas: "text" "text";
   border-radius: 18px;
   background: white;
   box-shadow: 5px 5px 15px rgba(0,0,0,0.3);
   text-align: center;
-  /* min-width: 300px;
-  max-width: 300px; */
+  min-width:250px;
   margin: 50px;
+  transition: 0.5s ease;
+  cursor: pointer;
+  margin:30px;
+}
+.skill-list{
+  list-style-position: inside;
+  font-size: 3rem;
+}
+.skill-list ::marker{
+color: red;
+}
+.skill-card:hover {
+  transform: scale(1.05);
+  box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
+}
+/* TODO: work on this media query */
+@media (min-width: 800px){
+  .skill-container{
+    flex-direction: column;
+  }
 }
 
 .et-hero-tabs-container {
@@ -232,8 +288,7 @@ ul{
 }
 .et-hero-tabs-container--top {
   background: rgba(13,19,34, 0.95);
-  -webkit-box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
-  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.3);
   position: fixed;
   top: 0;
 }
