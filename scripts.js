@@ -3,7 +3,7 @@ window.addEventListener('load', function(){
     //To make responsive, check the documentation for break points
   slidesToShow: 1,
   slidesToScroll: 'auto',
-  // draggable: true,
+  draggable: true,
   // scrollLock: true,
   dots: '#dots',
   arrows: {
@@ -25,7 +25,7 @@ window.addEventListener('load', function(){
       // screens greater than >= 1024px
       breakpoint: 1200,
       settings: {
-          slidesToShow: 3,
+          slidesToShow: 4,
           slidesToScroll: 'auto',
           itemWidth: 300,
           duration: 0.25
