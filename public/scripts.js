@@ -12,6 +12,14 @@ window.addEventListener('load', function(){
   },
   responsive: [
       {
+      breakpoint: 471,
+      settings: {
+        slidesToShow: 1,
+        // draggable:false,
+        slidesToScroll: 'auto',
+        duration: 0.25,
+        itemWidth: 50
+      },
       // screens greater than >= 775px
       breakpoint: 931,
       settings: {
